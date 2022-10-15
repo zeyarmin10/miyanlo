@@ -55,7 +55,7 @@
         cursor: pointer;
       }
       p .close-button {
-        bottom: 15%;
+        bottom: 5%;
         border: none;
         border-radius: 10px;
         padding: 0.5rem 2rem;
@@ -162,7 +162,7 @@
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
         z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
+        padding-top: 20px; /* Location of the box */
         left: 0;
         top: 0;
         width: 100%; /* Full width */
@@ -176,11 +176,19 @@
         margin: auto;
         padding: 20px;
         border: 1px solid #888;
-        width: 90%;
+        width: 60%;
         height: 90vh;
         border-radius: 20px;
       }
-      @media (max-width: 560px) {
+      .carousel {
+        /* justify-content: center; */
+        margin: 0 auto;
+        width: 50% !important;
+      }
+      .img-fluid {
+        /* height: 90vh !important; */
+      }
+      @media (max-width: 590px) {
         .lds-roller {
           top: 45%;
           left: 40%;
@@ -188,6 +196,19 @@
         .btn-close {
           bottom: 20%;
           left: 10%;
+        }
+        .modal-content {
+          width: 95% !important;
+        }
+        .carousel {
+          /* justify-content: center; */
+          margin: 0 auto;
+          width: 100% !important;
+        }
+
+        .img-fluid {
+          width: 100% !important;
+          height: 40vh !important;
         }
       }
     </style>
@@ -256,7 +277,6 @@
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>သူမသိသလိုလေး ...</h5>
-                <p>Snap shot ဖြစ်အောင် ရိုက်ပေးခဲ့ရသေးတယ် ...</p>
               </div>
             </div>
             <div class="carousel-item">
@@ -266,19 +286,17 @@
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>သိမ်သိမ်မွေ့မွေ့နဲ့လှနေသူ ...</h5>
-                <p>ကြည့်ရတာ အေးချမ်းတယ် ...</p>
+                <h5>သိမ်သိမ်မွေ့မွေ့ လှနေသူ ...</h5>
               </div>
             </div>
             <div class="carousel-item">
               <img
-                src="272981987_FB4.jpg"
+                src="272981987_FB3.jpg"
                 class="d-block w-100 img-fluid"
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>မအူမလည် အရွယ်လေး</h5>
-                <p>ကမ်းခြေကဘုရားဆိုတော့ short jean pant နဲ့ ဟဟ</p>
+                <h5>မအူမလည်</h5>
               </div>
             </div>
           </div>
